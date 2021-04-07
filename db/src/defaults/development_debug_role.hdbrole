@@ -1,0 +1,21 @@
+{
+  "role": {
+    "name": "development_debug_role",
+    "object_privileges": [
+      {
+        "name": "Federation",
+        "type": "VIEW",
+        "privileges": [
+          "SELECT"
+        ]
+      }
+    ],
+    "schema_analytic_privileges": [
+      {
+        "privileges": [
+          "AllData"
+        ]
+      }
+    ]
+  }
+}

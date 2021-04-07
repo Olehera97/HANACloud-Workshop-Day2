@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Federation" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="true">
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Federation" applyPrivilegeType="SQL_ANALYTIC_PRIVILEGE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="true">
 <descriptions defaultDescription="Federation"/>
 <localVariables/>
 <variableMappings/>
-<executionHints name="query_level_sql_hints" value="RESULT_CACHE"/>
-<executionHints name="qo_pop_hints" value="RESULT_CACHE"/>
+<executionHints name="query_level_sql_hints" value="RESULT_CACHE_BEFORE_ANALYTIC_PRIVILEGE"/>
+<executionHints name="qo_pop_hints" value="RESULT_CACHE_BEFORE_ANALYTIC_PRIVILEGE"/>
 <dataSources>
   <DataSource id="com.sap::TLOG_F_C">
     <resourceUri>com.sap::TLOG_F_C</resourceUri>
